@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<script src='script.js'></script>
+</head>
+<body>
+	<canvas></canvas>
+	<script src="canvas.js"></script>
+	<div id="Calculator">
+		<input id="textfield" type="text" readonly="readonly" disabled="disabled">
+		<input id="result" type="text" readonly="readonly" disabled="disabled">
+		<table>
+			<tr>
+				<td onclick="writeInTextField(1)">1</td>
+				<td onclick="writeInTextField(2)">2</td>
+				<td onclick="writeInTextField(3)">3</td>
+				<td class="operator" onclick="round()">round</td>
+			</tr>
+			<tr>
+				<td onclick="writeInTextField(4)">4</td>
+				<td onclick="writeInTextField(5)">5</td>
+				<td onclick="writeInTextField(6)">6</td>
+				<td class="operator" onclick="writeInTextField('*')">✖</td>
+			</tr>
+			<tr>
+				<td onclick="writeInTextField(7)">7</td>
+				<td onclick="writeInTextField(8)">8</td>
+				<td onclick="writeInTextField(9)">9</td>
+				<td class="operator" onclick="sqrt()">√</td>
+			</tr>
+			<tr>
+				<td onclick="writeInTextField(0)">0</td>
+				<td class="operator" onclick="abs()">abs</td>
+				<td class="operator" onclick="ceil()">ceil</td>
+				<td class="operator" onclick="floor()">floor</td>
+			</tr>
+			<tr>
+				<td onclick="writeInTextField('.')">.</td>
+				<td class="operator" onclick="del()">del</td>
+				<td class="operator" onclick="sin()">sin</td>
+				<td class="operator" onclick="cos()">cos</td>
+			</tr>
+<!-- 			<tr>
+				<td onclick="evaluate()">=</td>
+				<td onclick="del()">del</td>
+				<td onclick="sin()">sin</td>
+				<td onclick="cos()">cos</td>
+			</tr>
+ -->
+
+		</table>
+	</div>
+</body>
+</html>
